@@ -40,7 +40,7 @@ fn part_2(ferry: &mut Ferry) -> usize {
                 .filter(|s| s.to_owned().to_owned() == Space::Occupied)
                 .count();
         };
-    };
+    }
 }
 
 fn cmp(left: &[Space], right: &[Space]) -> bool {
