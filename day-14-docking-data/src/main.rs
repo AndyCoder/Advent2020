@@ -1,6 +1,6 @@
+use regex::Regex;
 use std::collections::HashMap;
 use std::fs;
-use regex::Regex;
 
 fn main() {
     let program: Vec<String> = fs::read_to_string("input")
@@ -19,8 +19,8 @@ fn main() {
             let mut value: String = format!("{:0>36b}", line[2].parse::<usize>().unwrap());
             for (i, c) in current_mask.chars().enumerate() {
                 match c {
-                    '1' => value.replace_range(i..i+1, "1"),
-                    '0' => value.replace_range(i..i+1, "0"),
+                    '1' => value.replace_range(i..i + 1, "1"),
+                    '0' => value.replace_range(i..i + 1, "0"),
                     _ => (),
                 }
             }
@@ -30,7 +30,8 @@ fn main() {
     for (k, v) in memory.iter() {
         println!("{}, {}", k, v);
     }
-    let result: usize = memory.values()
+    let result: usize = memory
+        .values()
         .map(|s| usize::from_str_radix(s, 2).unwrap())
         .sum();
 
