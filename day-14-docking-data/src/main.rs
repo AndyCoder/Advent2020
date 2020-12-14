@@ -35,8 +35,5 @@ fn main() {
         .map(|s| usize::from_str_radix(s, 2).unwrap())
         .sum();
 
-    //let result: usize = execute(&program);
     println!("part 1: {}", result);
-    //let result_2: isize = execute_until_fixed(&program);
-    //println!("part 2: {}", result_2);
 }

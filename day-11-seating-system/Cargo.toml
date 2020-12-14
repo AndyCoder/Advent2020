@@ -1,5 +1,5 @@
 [package]
-name = "day-10"
+name = "day-11-seating-system"
 version = "0.1.0"
 authors = ["Andy Coder <Andy.Coder@ibm.com>"]
 edition = "2018"

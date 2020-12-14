@@ -10,7 +10,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "day-8-handheld-halting"
+name = "day-14-docking-data"
 version = "0.1.0"
 dependencies = [
  "regex",
